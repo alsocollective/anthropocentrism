@@ -1,0 +1,35 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<title>Quick Demo</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="/assets/style.min.css"/>
+</head>
+<body class="explain">
+	<div id="wrapper">
+		<h1>Explain Type</h1>
+		<div id="fire" class="type-explination">fire - an explination</div>
+		<div id="water" class="type-explination">water - an explination</div>
+		<div id="earth" class="type-explination">earth - an explination</div>
+		<div id="wind" class="type-explination">wind - an explination</div>
+		<div id="human" class="type-explination">human - an explination</div>
+
+		<a href="/pages/4-pairing-state.html">pairing state</a>
+		<div class="note">
+			take the cookie type remove everything else that is not that type. <br>
+			$(".type-explination :not('#cookie')");
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/assets/js/lib/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/js.cookie.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
+	<script type="text/javascript">
+		app.explain.init();
+	</script>
+</body>
+</html>

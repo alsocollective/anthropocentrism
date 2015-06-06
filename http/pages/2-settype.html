@@ -1,0 +1,39 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<title>Quick Demo</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="/assets/style.min.css"/>
+</head>
+<body class="set">
+	<div id="wrapper">
+		<h1>Set Type</h1>
+		<ul>
+			<li id="fire" class="type-option"><a href="#fire">fire</a></li>
+			<li id="water" class="type-option"><a href="#water">water</a></li>
+			<li id="earth" class="type-option"><a href="#earth">earth</a></li>
+			<li id="wind" class="type-option"><a href="#wind">wind</a></li>
+			<li id="human" class="type-option"><a href="#human">human</a></li>
+		</ul>
+		<a href="/pages/3-explaintype.html">explain type</a>
+
+		<div class="note">
+			select the type-option with js (but for not leave it manually) <br>
+			set it as a cookie <br>
+			track number of times through the project <br>
+			prevent page change if no type selected (by looking at cookie)
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/assets/js/lib/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/js.cookie.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
+	<script type="text/javascript">
+		app.set.init();
+	</script>
+</body>
+</html>
